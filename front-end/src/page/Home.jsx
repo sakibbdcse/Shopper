@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Nevbar from '../components/navbar/Navbar'
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <Nevbar/>
+    </>
   )
 }
 
