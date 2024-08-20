@@ -1,6 +1,6 @@
 import React from 'react'
 import Nevbar from '../components/navbar/Navbar'
-const Home = () => {
+const Shop = () => {
   return (
     <>
     <Nevbar/>
@@ -8,4 +8,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Shop
