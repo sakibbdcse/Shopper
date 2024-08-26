@@ -3,8 +3,9 @@
 }
 
 .item:hover {
-    transform: scale(1.0);
+    transform: scale(1.1);
     transition: 0.6s;
+    cursor: pointer;
 }
 
 .item p {
