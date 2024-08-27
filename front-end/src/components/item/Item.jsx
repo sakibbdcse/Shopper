@@ -7,10 +7,10 @@ const Item = (item) => {
             <p>{item.name}</p>
             <div className="item-prices">
                 <div className="item-price-new">
-                    {item.new_price}
+                    ${item.new_price}
                 </div>
                 <div className="item-price-old">
-                    {item.old_price}
+                    ${item.old_price}
                 </div>
             </div>
         </div>
