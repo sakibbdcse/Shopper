@@ -13,6 +13,7 @@ const Shop = () => {
       <Offer />
       <NewColections />
       <NewsLetter />
+
     </>
   )
 }
