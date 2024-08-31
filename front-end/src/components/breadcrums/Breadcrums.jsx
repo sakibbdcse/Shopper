@@ -1,8 +1,12 @@
 import React from 'react'
-
-const Breadcrums = () => {
+import './breadcrums.css'
+import breadcrum_arrow from '../../assets/breadcrum_arrow.png'
+const Breadcrums = (props) => {
+    const { product } = props
     return (
-        <div>Breadcrums</div>
+        <div className='breadcrums'>
+            Home <img src={breadcrum_arrow} alt="breadcrum arrow icon" /> Shop <img src={breadcrum_arrow} alt="breadcrum arrow icon" /> {product.category} <img src={breadcrum_arrow} alt="breadcrum arrow icon" /> Shop <img src={breadcrum_arrow} alt="breadcrum arrow icon" /> {product.name}
+        </div>
     )
 }
 
