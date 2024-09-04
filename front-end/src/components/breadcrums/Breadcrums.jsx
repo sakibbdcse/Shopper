@@ -13,8 +13,8 @@ const Breadcrums = ({ product }) => {
 
     const breadcrumbs = [
         { label: 'Home', link: '/' },
-        { label: 'Shop', link: '/shop' },
-        { label: product.category, link: `/shop/${product.category}` },
+        { label: 'Shop', link: '/' },
+        { label: product.category, link: `/${product.category}` },
         { label: product.name, link: null }
     ];
 
