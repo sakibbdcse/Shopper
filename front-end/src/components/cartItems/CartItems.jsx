@@ -29,7 +29,7 @@ const CartItems = () => {
 
                     return (
                         <div key={item.id}>
-                            <div className='cart-item-format'>
+                            <div className='cart-item-format cart-item-format-main'>
                                 <img className='cart-icon-product-icon' src={item.image} alt={item.name} />
                                 <p>{item.name}</p>
                                 <p>${price}</p>
@@ -48,6 +48,35 @@ const CartItems = () => {
             ) : (
                 <div className="cart-empty">Your cart is empty</div>
             )}
+            <div className="cart-item-down">
+                <div className="cart-item-total">
+                    <h1>Cart Total</h1>
+                    <div>
+                        <div className="cart-item-total-item">
+                            <p>Sub total</p>
+                            <p>${0}</p>
+                        </div>
+                        <hr />
+                        <div className="cart-item-total-item">
+                            <p>Shipping Free</p>
+                            <p>Free</p>
+                        </div>
+                        <hr />
+                        <div className="cart-item-total-item">
+                            <h3>Total</h3>
+                            <h3>${0}</h3>
+                        </div>
+                    </div>
+                    <button>PROCEED TO CHECKOUT</button>
+                </div>
+                <div className="cart-item-promocode">
+                    <p>If you have a promocode Enter here</p>
+                    <div className="cart-item-promobox">
+                        <input type="text" placeholder='Promo Code' />
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
