@@ -49,6 +49,9 @@
     border: none;
     outline: none;
     margin: 0px 4px;
+    cursor: pointer;
+    background: none;
+    font-size: 12px;
 }
 
 .cart-item-down {
